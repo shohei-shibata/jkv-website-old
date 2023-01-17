@@ -1,3 +1,133 @@
-body {
+:root {
+  --font-family-heading: Play, sans-serif;
+  --font-family-paragraph: Archivo, sans-serif;
+  --font-color-dark: #444;
+  --font-color-light: #fff;
+  --color-accent: #DCAB4E;
+}
+
+h1, h2, h3, h4, h5, h6,
+nav {
+  font-family: var(--font-family-heading);
+}
+
+.btn-default {
+  background-color: var(--color-accent);
+  padding: 3px 22px 0px;
+
+  width: 235px;
+  height: 47px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  color: var(--font-color-light);
+
+  border: none;
+}
+
+html, body {
+  font-family: var(--font-family-paragraph);
+  margin: 0;
+  padding: 0;
+  color: var(--font-color-dark);
+}
+
+.background-dark {
   background-color: #222;
+  color: var(--font-color-light);
+}
+
+.center-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 30px;
+}
+
+.logo-nav {
+  width: auto;
+  height: 75px;
+}
+
+#nav-container>ul {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  padding-right: 30px;
+}
+
+#nav-container>ul>li {
+  list-style-type: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#nav-container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--font-color-dark);
+}
+
+#nav-container a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.content-wrapper-default-width {
+  max-width: 800px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+#section-banner {
+  padding: 90px 120px;
+}
+
+#section-banner h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+#section-banner h2 {
+  font-size: 1.5em;
+}
+
+/* SERVICE */
+
+.image-text-side-by-side-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.image-container {
+  background-color: #aaa;
+  min-width: 300px;
+  height: 300px;
 }
