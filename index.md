@@ -11,24 +11,10 @@ description: JKV Engineering - Rapid Engineered Solutions
   <h2>With Automotive and Industrial Focus</h2>
 </section>
 
-{% include service %}
+{% include services %}
 
+{% include capabilities %}
 
-<section class="background-dark" id="section-capabilities">
-  <div class="content-wrapper-default-width">
-    <h1 class="section-title">Capabilities</h1>
-  </div>
-</section>
+{% include team %}
 
-
-<section id="section-our-team">
-  <div class="content-wrapper-default-width">
-    <h1 class="section-title">Our Team</h1>
-  </div>
-</section>
-
-<section class="background-dark" id="section-contact-us">
-  <div class="content-wrapper-default-width">
-    <h1 class="section-title">Contact Us</h1>
-  </div>
-</section>
+{% include contact %}
