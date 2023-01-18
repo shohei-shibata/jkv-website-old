@@ -88,26 +88,26 @@ nav {
   height: 75px;
 }
 
-#nav-container>ul {
+#nav-desktop-container>ul {
   display: flex;
   gap: 30px;
   padding: 0;
   padding-right: 30px;
 }
 
-#nav-container>ul>li {
+#nav-desktop-container>ul>li {
   list-style-type: none;
   font-size: 1.2em;
   font-weight: bold;
 }
 
-#nav-container a {
+#nav-desktop-container a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--font-color-dark);
 }
 
-#nav-container a:hover {
+#nav-desktop-container a:hover {
   text-decoration: underline;
 }
 
