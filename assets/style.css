@@ -23,6 +23,10 @@ h3 {
   font-size: 20px;
 }
 
+p {
+	font-size: 18px;
+}
+
 .btn-default {
   font-family: var(--font-family-heading);
 
@@ -220,4 +224,32 @@ section {
 }
 .google-map-container iframe {
   width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+	#nav-desktop-container {
+		display: none;
+	}
+	.nav-container {
+		justify-content: center;
+	}
+	#section-banner {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.image-text-side-by-side-container {
+		grid-template-columns: 1fr;
+	}
+	.gallery-text-side-by-side-container {
+		grid-template-columns: 1fr;
+	}
+  .gallery-image {
+		width: 100%;
+	}
+	.team-container {
+		grid-template-columns: 1fr;
+	}
+	.contact-row-1-container {
+		grid-template-columns: 1fr;
+	}
 }
