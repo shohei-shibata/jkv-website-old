@@ -1,7 +1,6 @@
 <nav class="nav-container">
   <div id="header-title">
     <a href="/"><img class="logo-nav" src="/assets/logo-nav.png" /></a>
-    
   </div>
   <div id="nav-desktop-container">
     <ul>
@@ -26,5 +25,47 @@
         </a>
       </li>
     </ul>
+  </div>
+  <div id="nav-mobile-container">
+    <div id="nav-mobile-menu">
+      <ul>
+        <li>
+          <a href="#section-services">
+            <small>Services</small>
+          </a>
+        </li>
+        <li>
+          <a href="#section-capabilities">
+            <small>Capabilies</small>
+          </a>
+        </li>
+        <li>
+          <a href="#section-our-team">
+            <small>Our Team</small>
+          </a>
+        </li>
+        <li>
+          <a href="#section-contact-us">
+            <small>Contact Us</small>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a href="javascript:void(0)" class="nav-mobile-icon" onclick="a()">
+      <i id="nav-icon" class="fa-solid fa-bars fa-xl"></i>
+    </a>
+    <script>
+      function a() {
+        const x = document.getElementById("nav-icon");
+        const y = document.getElementById("nav-mobile-menu");
+        x.classList.toggle("fa-bars");
+        x.classList.toggle("fa-xmark");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+      }
+    </script>
   </div>
 </nav>
