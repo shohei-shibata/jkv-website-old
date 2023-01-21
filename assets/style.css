@@ -4,6 +4,8 @@
   --font-color-dark: #444;
   --font-color-light: #fff;
   --color-accent: #DCAB4E;
+  --color-background-white: #fff;
+  --color-border-dark: #aaa;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -31,7 +33,7 @@ p {
   font-family: var(--font-family-heading);
 
   background-color: var(--color-accent);
-  padding: 3px 22px 0px;
+  padding: 0;
 
   width: 235px;
   height: 47px;
@@ -46,9 +48,26 @@ p {
   text-transform: uppercase;
 
   color: var(--font-color-light);
+  font-weight: bold;
 
   border: none;
   margin: 30px 0;
+}
+
+.btn-default a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.btn-white {
+  background-color: var(--color-background-white);
+  color: var(--font-color-dark);
+  border: solid 1px var(--color-border-dark);
 }
 
 .btn:hover {
@@ -76,6 +95,10 @@ html, body {
   box-shadow: inset 0px 0px 125px 100px rgba(0, 0, 0, 0.1);
 }
 
+.background-yellow {
+  background-color: var(--color-accent);
+}
+
 .center-item {
   display: flex;
   justify-content: center;
@@ -93,6 +116,10 @@ nav {
 .logo-nav {
   width: auto;
   height: 75px;
+}
+
+#nav-desktop-container>ul {
+  margin-left: 30px;
 }
 
 #nav-desktop-container>ul,
@@ -116,7 +143,8 @@ nav {
   color: var(--font-color-dark);
 }
 
-#nav-desktop-container a:hover {
+#nav-desktop-container a:hover,
+#nav-footer a:hover {
   text-decoration: underline;
 }
 
@@ -150,7 +178,6 @@ nav {
   margin: 10px 15px;
 }
 
-
 #nav-mobile-menu>ul {
   flex-direction: column;
   align-items: center;
@@ -158,36 +185,59 @@ nav {
   margin: 15px 0 30px;
 }
 
+#nav-footer>ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0;
+}
+#nav-footer>ul>li {
+  list-style-type: none;
+}
+#nav-footer a {
+  text-decoration: none;
+  color: var(--font-color-light);
+}
+
 
 footer {
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 section {
   padding: 60px 0;
 }
-
 .content-wrapper-default-width {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
-
-#section-banner {
+.section-banner {
   padding: 90px 120px;
 }
-
-#section-banner h1 {
+.banner-page {
+  padding: 60px 0;
+}
+.section-banner h1 {
   font-size: 1.8em;
   text-transform: uppercase;
 }
-#section-banner h2 {
+.banner-page h1 {
+  text-align: center;
+}
+.section-banner h2 {
   font-size: 1.5em;
 }
 
@@ -204,6 +254,43 @@ section {
   background-color: #aaa;
   min-width: 300px;
   height: 300px;
+}
+
+/* PROJECTS */
+
+.projects-gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.projects-gallery-image {
+  min-width: 240px;
+  min-height: 240px;
+  background-color: #aaa;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.8);
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.projects-gallery-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1);
+  z-index: 2;
+}
+.projects-gallery-image a {
+  text-decoration: none;
+  color: var(--font-color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.projects-gallery-image h3 {
+  margin: 0;
 }
 
 /* CAPABILITIES */
@@ -261,16 +348,38 @@ section {
   width: 100%;
   box-sizing: border-box;
   margin: 5px 0;
+  padding: 10px 5px;
 }
 .contact-row-1-container {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 30px;
+  width: 100%;
 }
 .google-map-container {
   margin: 30px 0;
+  width: 100%;
 }
 .google-map-container iframe {
+  width: 100%;
+}
+
+/* SINGLE PAGE */
+
+.hero-image {
+  max-width: 100%;
+  margin: 30px 0;
+}
+.post-content-wrapper {
+  width: 100%;
+}
+
+.post-content-wrapper p {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.post-content-wrapper p>img {
   width: 100%;
 }
 
@@ -303,5 +412,19 @@ section {
 	.contact-row-1-container {
 		grid-template-columns: 1fr;
 	}
+  .projects-gallery-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .projects-gallery-image {
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    background-color: #aaa;
+    margin: auto;
+  }
 }
 

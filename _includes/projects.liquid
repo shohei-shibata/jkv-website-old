@@ -1,0 +1,17 @@
+
+<section class="background-dark" id="section-projects">
+  <div class="content-wrapper-default-width">
+    <h1 class="section-title">Projects</h1>
+    <div class="projects-gallery-container">
+      {%- for project in collections.projects -%}
+        {%- assign project_title = project.data.title -%}
+        {%- assign project_url = project.url -%}
+        {% render projects-gallery-image.liquid 
+          project_title: project_title,
+          project_url: project_url
+        %}
+      {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
