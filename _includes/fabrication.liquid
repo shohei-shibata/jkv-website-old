@@ -1,0 +1,18 @@
+<section class="background-dark" id="section-fabrication">
+  <div class="content-wrapper-default-width">
+    <h1 class="section-title">Fabrication Capabilities</h1>
+    <div class="gallery-text-side-by-side-container">
+      <div class="gallery-images-container">
+        {%- for image in fabrication.images -%}
+        <img class="gallery-image" src="/assets/images/{{ image }}" />
+        {%- endfor -%}
+      </div>
+      <div class="gallery-text-container">
+        {%- for text in fabrication.text -%}
+        <p>{{ text.title }}</p>
+        <p>{{ text.description }}</p>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+layout: layout.liquid
+---
+{% include banner-page text: "Our Team" %}
+
+{% capture image_url %}
+/assets/images/{{ image_filename }}
+{% endcapture %}
+
+<section class="content-wrapper-default-width">
+  <div class="post-content-wrapper">
+    <img class="portrait-image" src="{{ image_url }}"/>
+    <div class="staff-info-container">
+      <h1>{{ staff_name }}</h1>
+      <h3>{{ staff_title }}</h3>
+    </div>
+    {{ content }}
+  </div>
+  {% render button-default text: "<< Back" link_url: "/#section-our-team" %}
+</section>
+
+{% include contact %}

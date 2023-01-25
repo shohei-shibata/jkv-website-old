@@ -9,6 +9,11 @@ module.exports = function(eleventyConfig) {
     let collection =  collectionAPI.getFilteredByGlob("./projects/*.md");
     return collection;
   });
+  
+  eleventyConfig.addCollection("staff", function (collectionAPI) {
+    let collection =  collectionAPI.getFilteredByGlob("./staff/*.md");
+    return collection;
+  });
 
   eleventyConfig.addPassthroughCopy("assets");
 };

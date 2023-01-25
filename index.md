@@ -14,7 +14,7 @@ description: JKV Engineering - Rapid Engineered Solutions
 
 {% include cta-contact %}
 
-{% include capabilities %}
+{% include fabrication %}
 
 {% include team %}
 

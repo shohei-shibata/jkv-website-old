@@ -2,42 +2,18 @@
   <div class="content-wrapper-default-width">
     <h1 class="section-title">Our Team</h1>
     <div class="team-container">
-      <div class="team-member-container">
-        <div class="team-member-photo-container">
+      {%- for staff in collections.staff -%}
+        {%- assign staff_name = staff.data.staff_name -%}
+        {%- assign staff_title = staff.data.staff_title -%}
+        {%- assign image_filename = staff.data.image_filename -%}
+        {%- assign staff_page_url = staff.url -%}
+        <div class="team-member-container">
+          <a href="{{ staff_page_url }}">
+            <img class="team-member-photo" src="/assets/images/{{ image_filename }}"/>
+          </a>
+          <h3>{{ staff_name }}</h3>
+          <p>{{ staff_title }}</p>
         </div>
-        <h3>Employee Name</h3>
-        <p>Employee Title</p>
-      </div>
-      <div class="team-member-container">
-        <div class="team-member-photo-container">
-        </div>
-        <h3>Employee Name</h3>
-        <p>Employee Title</p>
-      </div>
-      <div class="team-member-container">
-        <div class="team-member-photo-container">
-        </div>
-        <h3>Employee Name</h3>
-        <p>Employee Title</p>
-      </div>
-      <div class="team-member-container">
-        <div class="team-member-photo-container">
-        </div>
-        <h3>Employee Name</h3>
-        <p>Employee Title</p>
-      </div>
-      <div class="team-member-container">
-        <div class="team-member-photo-container">
-        </div>
-        <h3>Employee Name</h3>
-        <p>Employee Title</p>
-      </div>
-      <div class="team-member-container">
-        <div class="team-member-photo-container">
-        </div>
-        <h3>Employee Name</h3>
-        <p>Employee Title</p>
-      </div>
-    </div>
+      {%- endfor -%}
   </div>
 </section>

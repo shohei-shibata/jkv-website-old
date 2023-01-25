@@ -1,7 +1,8 @@
 ---
 layout: layout.liquid
 ---
-{% include banner-page %}
+{% capture page_title %}{{ title }}{% endcapture %}
+{% include banner-page text: page_title %}
 
 {% capture image_url %}
 /assets/images/{{ project-image }}

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Hybrid Thermal Management",
+    "description": "JKV Engineering has extensive experience developing fluid power and fluid conveyance systems for a variety of applications. We have designed and implemented systems including brewery “Clean in Place” systems, hybrid vehicle fuel systems, and hydro-pneumatic energy recovery for heavy duty hybrid vehicles. We’ve applied all of this experience to the design of thermal management systems for electric and hybrid electric vehicles. The cost, reliability, and efficiency of these systems has an enormous bearing on those parameters for the overall vehicle. ",
+    "image_filename": "services-1.jpg"
+  },
+  {
+    "title": "PV Energy & Storage",
+    "description": "In our work in automotive research and development projects, we often design around power dense systems. Instantaneous power requirements for vehicles can be many times greater than the requirements for relatively large buildings. The automotive environment also requires safety, reliability, and performance that is more than adequate for other power systems such as residential and commercial buildings. While there are tremendous opportunities to incorporate renewable energy into automotive applications a very large portion of the energy that we use on a daily basis is taken from the buildings where we live and work.",
+    "image_filename": "services-2.jpg"
+  },
+  {
+    "title": "Internal Combustion Engine Integration & Adaptation",
+    "description": "JKV Engineering offers its engineering services for the adaptation of internal combustion engine systems into special applications. Aside from a background in powersports and classic performance car restoration, JKV engineers have adapted engine systems for use in hybrid vehicles, range extended electric vehicles, diesel re-powered to CNG busses, as well as pump and power applications. We have experience working with engineers from OEM car manufacturers to integrate engines and their subsystems into vehicles and other applications elegantly and reliably. ",
+    "image_filename": "services-3.jpg"
+  },
+  {
+    "title": "Power-train Development Testing",
+    "description": "JKV Engineering has experience with power transmission systems from robotic joints to vehicle power-train development and in the loop testing. We've been involved with hybrid power-train work since 2008 when we developed and tested multiple hydraulic hybrid drive-trains for vocational vehicles. Since then we've worked on multiple hybrid electric power-train systems, as well as performance automotive and industrial equipment power-trains. JKV has developed power-train systems from full vehicle mathematical models through to power-train component design and control systems development.",
+    "image_filename": "services-4.jpg"
+  }
+]
