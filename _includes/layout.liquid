@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% render head title: title %}
+  {% include head title: title %}
 
   <body>
     
-    {% render nav %}
+    {% include nav %}
 
     <main>
       {{ content }}
     </main>
 
-    {% render footer %}
+    {% include footer %}
 
   </body>
 </html>

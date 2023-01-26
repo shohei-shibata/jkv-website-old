@@ -3,6 +3,7 @@ title: Our Team
 staff_name: Jude Hueber
 staff_title: Principal Engineer and Owner
 image_filename: portrait_jude_hueber.jpg
+order: 1
 ---
 
 Jude Hueber is the Principal Engineer and Owner of JKV Engineering LLC, a company that specializes in automotive and power systems engineering. 

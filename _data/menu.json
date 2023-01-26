@@ -1,0 +1,50 @@
+{
+  "primary": [
+    {
+      "text": "Services",
+      "url": "/#services"
+    },
+    {
+      "text": "Projects",
+      "url": "/#projects"
+    },
+    {
+      "text": "Fabrication",
+      "url": "/#fabrication"
+    },
+    {
+      "text": "Our Team",
+      "url": "/#our-team"
+    },
+    {
+      "text": "Contact Us",
+      "url": "/#contact-us"
+    }
+  ],
+  "footer": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Services",
+      "url": "/#services"
+    },
+    {
+      "text": "Projects",
+      "url": "/#projects"
+    },
+    {
+      "text": "Fabrication",
+      "url": "/#fabrication"
+    },
+    {
+      "text": "Our Team",
+      "url": "/#our-team"
+    },
+    {
+      "text": "Contact Us",
+      "url": "/#contact-us"
+    }
+  ]
+}

@@ -1,23 +1,27 @@
 {
   "images": [
-    "placeholder.jpg", "placeholder.jpg", "placeholder.jpg", "placeholder.jpg", "placeholder.jpg", "placeholder.jpg"
+    "fabrication-1.jpg", "fabrication-2.jpg", "placeholder.jpg", "placeholder.jpg", "placeholder.jpg", "placeholder.jpg"
   ],
   "text": [
     {
+      "title": "3D Printing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
       "title": "Waterjet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Press Brake",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Welding",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "title": "Tube Bender",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ]
 }

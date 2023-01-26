@@ -4,56 +4,25 @@
   </div>
   <div id="nav-desktop-container">
     <ul>
+      {%- for item in menu.primary -%}
       <li>
-        <a href="#section-services">
-          <small>Services</small>
+        <a href="{{ item.url }}">
+          <small>{{ item.text }}</small>
         </a>
       </li>
-      <li>
-        <a href="#section-projects">
-          <small>Projects</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-fabrication">
-          <small>Fabrication</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-our-team">
-          <small>Our Team</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-contact-us">
-          <small>Contact Us</small>
-        </a>
-      </li>
+      {%- endfor -%}
     </ul>
   </div>
   <div id="nav-mobile-container">
     <div id="nav-mobile-menu">
       <ul>
+        {%- for item in menu.primary -%}
         <li>
-          <a href="#section-services">
-            <small>Services</small>
+          <a href="{{ item.url }}">
+            <small>{{ item.text }}</small>
           </a>
         </li>
-        <li>
-          <a href="#section-capabilities">
-            <small>Capabilies</small>
-          </a>
-        </li>
-        <li>
-          <a href="#section-our-team">
-            <small>Our Team</small>
-          </a>
-        </li>
-        <li>
-          <a href="#section-contact-us">
-            <small>Contact Us</small>
-          </a>
-        </li>
+        {%- endfor -%}
       </ul>
     </div>
     <a href="javascript:void(0)" class="nav-mobile-icon" onclick="a()">

@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
   
   eleventyConfig.addCollection("staff", function (collectionAPI) {
     let collection =  collectionAPI.getFilteredByGlob("./staff/*.md");
-    return collection;
+    return collection.sort((a, b) => a.data.order - b.data.order);
   });
 
   eleventyConfig.addPassthroughCopy("assets");

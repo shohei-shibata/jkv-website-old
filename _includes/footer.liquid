@@ -1,36 +1,13 @@
 <footer class="background-dark">  
   <div id="nav-footer">
     <ul> 
+      {%- for item in menu.footer -%}
       <li>
-        <a href="/">
-          <small>Home</small>
+        <a href="{{ item.url }}">
+          <small>{{ item.text }}</small>
         </a>
       </li>
-      <li>
-        <a href="#section-services">
-          <small>Services</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-projects">
-          <small>Projects</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-capabilities">
-          <small>Capabilies</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-our-team">
-          <small>Our Team</small>
-        </a>
-      </li>
-      <li>
-        <a href="#section-contact-us">
-          <small>Contact Us</small>
-        </a>
-      </li>
+      {%- endfor -%}
     </ul>
   </div>
   <div>
